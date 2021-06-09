@@ -28,7 +28,7 @@
 </head>
 
 <body>
-    <main>
+    <main id='cart'>
         <header class="stick style1 w-100">
             <div class="topbar bg-color1 w-100">
                 <div class="container">
@@ -51,6 +51,7 @@
                                             src="assets/images/logo.png" alt="Logo"
                                             srcset="assets/images/retina-logo.png"></a></h1>
                             </div>
+
                         </div>
                         <div class="top-info-wrap d-inline-flex flex-wrap justify-content-between align-items-center">
                             <div class="call-us">
@@ -86,16 +87,19 @@
                                                 <li><a href="projects.html" title="">Металлоконструкции</a></li>
                                             </ul>
                                         </li>
-                                        <li class="menu-item-has-children"><a href="javascript:void(0);" title="">Магазин</a>
+                                        <li class="menu-item-has-children"><a href="javascript:void(0);"
+                                                title="">Магазин</a>
                                             <ul class="mb-0 list-unstyled">
                                                 <li><a href="shop.html" title="">Продажа</a></li>
                                             </ul>
                                         </li>
                                     </ul>
                                 </li>
-                                <li class="menu-item"><a href="cart.html" title="">Корзина</a>
+                                <li class="menu-item"><a href="/cart.html" title="">Корзина</a>
                                 </li>
                             </ul>
+
+
                         </div>
                         <div class="header-right-btns">
                         </div>
@@ -137,61 +141,22 @@
                                     <ul class="mb-0 list-unstyled">
                                         <li><a href="shop.html" title="">Продажа</a></li>
                                     </ul>
-                                </li><li class="menu-item"><a href="cart.html" title="">Корзина</a>
-                                </li
+                                </li>
                         </div>
                     </nav>
                 </div>
             </div>
         </div>
-        <section>
-            <div class="w-100 pt-170 pb-150 dark-layer3 opc7 position-relative">
-                <div class="fixed-bg" style="background-image: url(assets/images/pagetop-bg.jpg);"></div>
-                <div class="container">
-                    <div class="page-top-wrap w-100">
-                        <h1 class="mb-0">Продажа</h1>
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html" title="">Домой</a></li>
-                            <li class="breadcrumb-item active">Магазин</li>
-                        </ol>
-                    </div><!-- Page Top Wrap -->
-                </div>
-            </div>
         </section>
         <section>
             <div class="w-100 pt-100 pb-100 position-relative">
                 <div class="container">
-                    <div class="shop-filters-pagination-wrap d-flex flex-wrap justify-content-between w-100">
-                        <div class="shop-filters d-inline-flex align-items-center">
-                            <div class="filter-inner">
-                                <span>Изменить представление:</span>
-                                <a href="javascript:void(0);" title=""><i class="fas fa-th-large"></i></a>
-                                <a href="javascript:void(0);" title=""><i class="fas fa-th-list"></i></a>
-                            </div>
-                        </div>
-                        <div class="shop-wrap w-100" id="app">
-                            <div class="row">
-                                <p v-if="loading" class="col-12 text-center">Загрузка...</p>
-                                <div v-for="{title,price,image,id} in entries"
-                                    :key="index" class="col-md-4 col-sm-6 col-lg-3">
-                                    <div class="shop-box w-100">
-                                        <div class="shop-img w-100 position-relative overflow-hidden">
-                                            <img class="img-fluid w-100" :src="image"
-                                                alt="Shop Image 1">
-                                            <a :href="'shop-detail.html?id='+id" title="">Подробнее<i
-                                                    class="fas fa-shopping-basket"></i></a>
-                                        </div>
-                                        <div class="shop-info w-100">
-                                            <h3 class="mb-0"><a href="shop-detail.html" title="">{{title}}</a></h3>
-                                            <div
-                                                class="shop-info-bottom d-flex flex-wrap justify-content-between w-100">
-                                                <span class="price"><ins>₽{{price}}</ins><del></del></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><!-- Shop Wrap -->
-                        </div>
+                    <div>
+                        <h1>Оплата проведена успешна!</h1>
+                        <p>Дождитесь, мы с Вами свяжемся</p>
+                    </div>
+                </div>
+            </div>
         </section>
         <footer>
             <div class="w-100 bg-color5 pt-100 pb-10 position-relative">
@@ -240,25 +205,23 @@
         </footer>
         <div class="copyright w-100 text-center bg-color6 position-relative">
             <div class="container">
-                <p class="mb-0"><a href="index.html" title="">©2021 ООО"ПКП Пионер"</a>.</p>
+                <p class="mb-0"><a href="index.html" title="">©2021 ООО"ПКП Пионер"</a></p>
             </div>
         </div><!-- Copyright -->
     </main><!-- Main Wrapper -->
 
-    <script src="/assets/js/jquery.min.js"></script>
-    <script src="/assets/js/popper.min.js"></script>
-    <script src="/assets/js/bootstrap.min.js"></script>
-    <script src="/assets/js/bootstrap-select.min.js"></script>
-    <script src="/assets/js/wow.min.js"></script>
-    <script src="/assets/js/counterup.min.js"></script>
-    <script src="/assets/js/jquery.fancybox.min.js"></script>
-    <script src="/assets/js/perfect-scrollbar.min.js"></script>
-    <script src="/assets/js/slick.min.js"></script>
-    <script src="/assets/js/particles.min.js"></script>
-    <script src="/assets/js/particle-int.js"></script>
-    <script src="/assets/js/custom-scripts.js"></script>
-    <script src='/assets/js/vue.global.prod.js'></script>
-    <script src='/assets/js/entries.js'></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap-select.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/counterup.min.js"></script>
+    <script src="assets/js/jquery.fancybox.min.js"></script>
+    <script src="assets/js/perfect-scrollbar.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/particles.min.js"></script>
+    <script src="assets/js/particle-int.js"></script>
+    <script src="assets/js/custom-scripts.js"></script>
 </body>
 
 </html>
