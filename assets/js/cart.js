@@ -34,7 +34,7 @@ const cart = Vue.createApp({
       })
       this.loading = true
       const res = await (
-        await fetch('http://localhost:5000/order', {
+        await fetch('https://pioner-api.herokuapp.com/order', {
           method: 'POST',
           body,
           headers: {
