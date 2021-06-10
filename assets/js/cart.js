@@ -42,7 +42,7 @@ const cart = Vue.createApp({
           },
         })
       ).json()
-      window.open(res.url)
+      window.open(res.url, '_self')
     },
   },
   watch: {
@@ -51,7 +51,6 @@ const cart = Vue.createApp({
     },
   },
   async created() {
-    // localStorage.clear()
     this.cart = JSON.parse(localStorage.getItem('cart') || '[]')
   },
 })
