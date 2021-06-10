@@ -4754,3 +4754,6 @@ blockquote > p::after {
     display: none;
   }
 }
+.sticky-menu {
+  /* overflow-y: scroll; */
+}
